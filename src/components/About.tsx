@@ -26,32 +26,33 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-semibold mb-6">Why Choose Us</h3>
-              {features.slice(0, 3).map((feature, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-start gap-3 animate-fade-in"
-                  style={{ animationDelay: `${idx * 0.1}s` }}
-                >
-                  <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">{feature}</span>
-                </div>
-              ))}
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl font-semibold mb-6 md:opacity-0">Why Choose Us</h3>
-              {features.slice(3).map((feature, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-start gap-3 animate-fade-in"
-                  style={{ animationDelay: `${(idx + 3) * 0.1}s` }}
-                >
-                  <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">{feature}</span>
-                </div>
-              ))}
+          <div className="mt-12">
+            <h3 className="text-2xl font-semibold mb-6 text-center">Why Choose Us</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                {features.slice(0, 3).map((feature, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-start gap-3 animate-fade-in"
+                    style={{ animationDelay: `${idx * 0.1}s` }}
+                  >
+                    <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-muted-foreground">{feature}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="space-y-4">
+                {features.slice(3).map((feature, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-start gap-3 animate-fade-in"
+                    style={{ animationDelay: `${(idx + 3) * 0.1}s` }}
+                  >
+                    <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-muted-foreground">{feature}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
