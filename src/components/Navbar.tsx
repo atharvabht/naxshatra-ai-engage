@@ -31,16 +31,15 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 md:h-24">
-          <a 
-            href="/" 
+          <a
+            href="/"
             aria-label="Homepage"
-            className="logo-link group relative transition-all duration-300 hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg"
+            className="logo-link transition-all duration-300 hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg"
           >
-            <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-lg opacity-0 group-hover:opacity-20 blur-lg transition-all duration-300" />
-            <img 
-              src={logo} 
-              alt="Naxshatraa AI Technologies" 
-              className="h-32 md:h-40 w-auto relative z-10 drop-shadow-lg"
+            <img
+              src={logo}
+              alt="Naxshatraa AI Technologies"
+              className="h-32 md:h-40 w-auto rounded-md shadow-sm"
               style={{ imageRendering: 'crisp-edges' }}
             />
           </a>
