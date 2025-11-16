@@ -16,6 +16,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Alata', 'system-ui', 'sans-serif'],
+        display: ['Alata', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

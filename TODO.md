@@ -1,0 +1,3 @@
+- [x] Update index.html to load Alata font from Google Fonts
+- [x] Update tailwind.config.ts to set sans font to Alata
+- [x] Test the font changes
